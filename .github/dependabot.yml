@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /.ci/broker-docker-compose
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /.ci/docker-compose
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /.devcontainer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /benchmark/docker-compose
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /benchmark
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /docs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /engine/datasource
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
